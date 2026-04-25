@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Monkey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Typing Monkey</h1>
+        <p>Check how fast and accurate you can type.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Typing Test</h2>
+            <p>Type the paragraph shown below as fast and accurately as you can.</p>
+
+            <div>
+                <h3>Text to type</h3>
+                <p id="givenText">
+                    Practice makes a person better at typing. Try to keep your focus on the words and avoid looking at the keyboard too much.
+                </p>
+            </div>
+
+            <div>
+                <label for="typingBox">Start typing here:</label>
+                <textarea id="typingBox" rows="8" placeholder="Start typing the paragraph here..."></textarea>
+            </div>
+
+            <div>
+                <p>Time Left: <span id="timeLeft">30</span> seconds</p>
+                <p>Status: <span id="testStatus">Not started</span></p>
+            </div>
+
+            <div>
+                <button id="startBtn">Start Test</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Your Result</h2>
+
+            <div>
+                <p>Speed</p>
+                <strong id="wpmResult">0 WPM</strong>
+            </div>
+
+            <div>
+                <p>Accuracy</p>
+                <strong id="accuracyResult">0%</strong>
+            </div>
+
+            <div>
+                <p>Mistakes</p>
+                <strong id="mistakeResult">0</strong>
+            </div>
+
+            <div>
+                <p>Characters Typed</p>
+                <strong id="charResult">0</strong>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Simple typing test project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
